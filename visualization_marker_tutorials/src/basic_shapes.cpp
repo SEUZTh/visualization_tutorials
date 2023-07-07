@@ -85,7 +85,8 @@ int main(int argc, char ** argv)
     marker.color.a = 1.0;
 
     // Set the lifetime of the marker -- 0 indicates forever
-    marker.lifetime = rclcpp::Duration::from_nanoseconds(0);
+    // marker.lifetime = rclcpp::Duration::from_nanoseconds(0);
+    marker.lifetime = rclcpp::Duration::from_seconds(0);
 
     // Publish the marker
     marker_pub->publish(marker);
